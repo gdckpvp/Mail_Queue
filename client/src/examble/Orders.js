@@ -9,44 +9,32 @@ import Title from './Title';
 
 
 // Generate Order Data
-function createData(id, date, name, shipTo, paymentMethod, amount) {
-  return { id, date, name, shipTo, paymentMethod, amount };
+function createData(queueId,id, name, time, status, infor) {
+  return { queueId,id, name, time, status, infor };
 }
 
 const rows = [
-  // createData(
-  //   0,
-  //   '16 Mar, 2019',
-  //   'Elvis Presley',
-  //   'Tupelo, MS',
-  //   'VISA ⠀•••• 3719',
-  //   312.44,
-  // ),
-  // createData(
-  //   1,
-  //   '16 Mar, 2019',
-  //   'Paul McCartney',
-  //   'London, UK',
-  //   'VISA ⠀•••• 2574',
-  //   866.99,
-  // ),
-  // createData(2, '16 Mar, 2019', 'Tom Scholz', 'Boston, MA', 'MC ⠀•••• 1253', 100.81),
-  // createData(
-  //   3,
-  //   '16 Mar, 2019',
-  //   'Michael Jackson',
-  //   'Gary, IN',
-  //   'AMEX ⠀•••• 2000',
-  //   654.39,
-  // ),
-  // createData(
-  //   4,
-  //   '15 Mar, 2019',
-  //   'Bruce Springsteen',
-  //   'Long Branch, NJ',
-  //   'VISA ⠀•••• 5919',
-  //   212.79,
-  // ),
+  createData(
+    0,
+    0,
+    'Elvis Presley',
+    '16 Mar, 2019',
+    'Waiting',
+    'VISA ⠀•••• 3719',
+  ),
+  createData(
+    1,
+    1,
+    'Paul McCartney',
+    '16 Mar, 2019',
+    'Done',
+    'VISA ⠀•••• 2574',
+  ),
+  createData(2,2, 'Tom Scholz', '16 Mar, 2019', 'Done', 'MC ⠀•••• 1253'),
+  createData(3,3, 'Michael Jackson', '16 Mar, 2019', 'Done', 'AMEX ⠀•••• 2000'),
+  createData(4,4, 'Bruce Springsteen', '16 Mar, 2019', 'Done', 'VISA ⠀•••• 5919'),
+
+  
 ];
 
 function preventDefault(event) {
@@ -70,12 +58,13 @@ export default function Orders() {
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow key={row.id}>
-              <TableCell>{row.date}</TableCell>
+            <TableRow key={row.queueId}>
+              <TableCell>{row.queueId}</TableCell>
+              <TableCell>{row.id}</TableCell>
               <TableCell>{row.name}</TableCell>
-              <TableCell>{row.shipTo}</TableCell>
-              <TableCell>{row.paymentMethod}</TableCell>
-              <TableCell align="right">{`$${row.amount}`}</TableCell>
+              <TableCell>{row.time}</TableCell>              
+              <TableCell>{row.status}</TableCell>              
+              <TableCell align="right">{row.infor}</TableCell>
             </TableRow>
           ))}
         </TableBody>
