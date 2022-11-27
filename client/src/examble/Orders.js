@@ -60,11 +60,12 @@ export default function Orders() {
       <Table size="small">
         <TableHead>
           <TableRow>
+            <TableCell>Queue ID</TableCell>
             <TableCell>ID</TableCell>
             <TableCell>Name</TableCell>
             <TableCell>Time</TableCell>
-            <TableCell>Payment Method</TableCell>
-            <TableCell align="right">Sale Amount</TableCell>
+            <TableCell>Status</TableCell>
+            <TableCell align="right">Infor</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
