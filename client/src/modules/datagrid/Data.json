@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "mailId": 1,
+            "time": "6",
+            "sender": "Snow",
+            "recipient": "Jon",
+            "status": "pending"            
+        },
+        {
+            "id": 2,
+            "mailId": 1,
+            "time": "8",
+            "sender": "Lannister",
+            "recipient": "Cersei",
+            "status": "pending"            
+        },
+        {
+            "id": 3,
+            "mailId": 1,
+            "time": "7",
+            "sender": "Lannister",
+            "recipient": "Jaime",
+            "status": "pending"            
+        },
+        {
+            "id": 4,
+            "mailId": 1,
+            "time": "7",
+            "sender": "Stark",
+            "recipient": "Arya",
+            "status": "pending"
+        },
+        {
+            "id": 5,
+            "mailId": 1,
+            "time": "7",
+            "sender": "Targaryen",
+            "recipient": "Daenerys",
+            "status": "pending"
+        },
+        {
+            "id": 6,
+            "mailId": 1,
+            "time": "7",
+            "sender": "Melisandre",
+            "recipient": null,
+            "status": "pending"
+        },
+        {
+            "id": 7,
+            "mailId": 1,
+            "time": "7",
+            "sender": "Clifford",
+            "recipient": "Ferrara",
+            "status": "pending"
+        },
+        {
+            "id": 8,
+            "mailId": 1,
+            "time": "7",
+            "sender": "Frances",
+            "recipient": "Rossini",
+            "status": "pending"
+        },
+        {
+            "id": 9,
+            "mailId": 1,
+            "time": "7",
+            "sender": "Roxie",
+            "recipient": "Harvey",
+            "status": "pending"
+        }
+    ]
+}
